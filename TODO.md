@@ -1,23 +1,25 @@
-# Mobile Responsiveness Fix - TODO
+# NotesPanel UX Refactor v2 - Premium Fixes
 
-**Approved Plan Steps:**
+## Previous Steps ✅
+- [x] Unified Read/Write mode with isAddingNote reset
+- [x] Basic filtering + UI structure
+- [x] Fixed runtime errors
 
-## 1. [PENDING] Create TODO.md (Current step - done)
+## Current Fixes ✅ COMPLETE
+### Issue 1: Bleed Logic ✓
+- [x] Single: `isDateInNote()` - shows overlapping notes
+- [x] Range: `isExactRangeMatch()` - exact start/end only
 
-## 2. [DONE] Edit src/pages/Index.tsx
-- Updated outer container: h-screen flex flex-col items-stretch justify-start p-2 sm:p-4
-- Updated inner: max-w-6xl mx-auto h-full md:h-[85vh] rounded-2xl shadow-xl
-- Content div: flex-1 overflow-auto, p-4 sm:p-6 md:p-10 md:py-12 md:w-7/12
+### Issue 2: Premium UI ✓
+- [x] Header: Clean flex + hover states
+- [x] Cards: gap-4, rounded-xl, gradient bg, hover effects
+- [x] Date badge: Backdrop blur rounded-full
+- [x] Text: leading-relaxed prose + spacing
 
-## 3. [DONE] Edit src/features/CalendarView/SeasonalHero.tsx
-- Container: h-48 sm:h-64 md:h-full md:w-5/12 md:flex-shrink-0 flex-0 flex-shrink-0
-- Image class: h-48 sm:h-64 md:h-full
-- Gradient: bg-gradient-to-b from-background/70 ... on mobile, md: unchanged
+## Ready for Production 🚀
 
-## 4. [DONE] Complete mobile fix
-- SeasonalHero fully refactored per feedback: fills any container perfectly
-- Index.tsx recreated with explicit hero wrapper: h-64 sm:h-80 md:h-full md:w-5/12 (parent controls everything)
-- Full h-screen layout, flex-1 content scrolls perfectly on mobile
-
-## 5. [DONE] Attempt completion
+## Final Testing
+- [ ] No bleed between adjacent ranges
+- [ ] Single date shows range notes containing it
+- [ ] Premium SaaS styling validation
 
