@@ -33,14 +33,14 @@ export function SeasonalHero() {
   }, [imgSrc, loadedSrc, runExtraction]);
 
   return (
-    <div className="relative h-48 sm:h-64 md:h-full md:w-5/12 md:flex-shrink-0 overflow-hidden flex-0 flex-shrink-0">
+    <div className="relative w-full h-full">
       <AnimatePresence mode="wait">
         <motion.img
           key={imgSrc}
           ref={imgRef}
           src={imgSrc}
           alt="Seasonal hero"
-          className="h-48 sm:h-64 md:h-full w-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
           crossOrigin="anonymous"
           onLoad={handleLoad}
           width={960}

@@ -14,10 +14,10 @@
 - Image class: h-48 sm:h-64 md:h-full
 - Gradient: bg-gradient-to-b from-background/70 ... on mobile, md: unchanged
 
-## 4. [DONE] Test responsiveness
-- Layout confirmed: Hero on top (taller h-48 sm:h-64), calendar/notes below on mobile
-- Full viewport h-screen, proper padding, scrollable content if needed
-- Desktop unchanged: side-by-side
+## 4. [DONE] Complete mobile fix
+- SeasonalHero fully refactored per feedback: fills any container perfectly
+- Index.tsx recreated with explicit hero wrapper: h-64 sm:h-80 md:h-full md:w-5/12 (parent controls everything)
+- Full h-screen layout, flex-1 content scrolls perfectly on mobile
 
 ## 5. [DONE] Attempt completion
 
